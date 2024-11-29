@@ -1,0 +1,8 @@
+{
+    "DockerRun.DisableAutoGenerateConfig": true,
+    "cloudcode.compute.sshInternalIp": true,
+    "swift.path": "\\BizXcentral\\kubernetes-Trezor-gcloud\\.calva\\output-window",
+    "swift.swiftEnvironmentVariables": {},
+    "DockerRun.DisableDockerrc": true,
+    "iis.configDir": ""
+}

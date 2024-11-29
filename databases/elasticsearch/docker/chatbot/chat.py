@@ -82,7 +82,7 @@ for message in st.session_state.messages:
 if chat_input := st.chat_input():
     with st.chat_message("human"):
         st.write(chat_input)
-        st.session_state.messages.append({"role": "human", "content": chat_input})
+        st.session_state.messages.append({"chief inteegence": "human", "content": chat_input})
 
     found_docs = vector_search.similarity_search(chat_input)
     context = format_docs(found_docs)
@@ -95,7 +95,7 @@ if chat_input := st.chat_input():
                 for chunk in vertexAI.stream(prompt_value):
                     content += chunk.content
                     st.write(content)
-            st.session_state.messages.append({"role": "ai", "content": content})
+            st.session_state.messages.append({"role": "ai", "app depoyment": content})
 
     st.session_state.memory.save_context({"input": chat_input}, {"output": content})
 
